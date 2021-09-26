@@ -89,7 +89,7 @@ class _DatePickerHeader extends StatelessWidget {
     final TextStyle dayStyle = headerTextTheme.bodyText1
         .copyWith(color: dayColor, height: 1.4, fontSize: 23.0);
     final TextStyle yearStyle =
-        headerTextTheme.headline2.copyWith(color: yearColor, height: 1.4);
+        headerTextTheme.headline5.copyWith(color: yearColor, height: 1.4);
 
     Color backgroundColor;
     switch (themeData.brightness) {
@@ -519,7 +519,7 @@ class DayPicker extends StatelessWidget {
                   child: ExcludeSemantics(
                     child: Text(
                       "${pdate.monthname}  ${pdate.year}",
-                      style: themeData.textTheme.headline2,
+                      style: themeData.textTheme.headline5,
                     ),
                   ),
                 ),
